@@ -5,7 +5,7 @@
 
     .controller('LunchCheckController', LunchCheckController);
 
-    LunchController.$inject = ['$scope'];
+    LunchCheckController.$inject = ['$scope'];
 
     function LunchCheckController($scope) {
         $scope.lunch = "";
