@@ -40,10 +40,10 @@
 
         <p>
           <label for="phone">Phone number (American style) [optional]:</label>
-          <input type="phone" name="phone" id="phone" placeholder="###-###-###"
+          <input type="phone" name="phone" id="phone" placeholder="###-###-####"
             ng-model="signUpCtrl.phone" pattern="(\d{3})-(\d{3})-(\d{4})" class="form-control">
           <span ng-if="signUpForm.phone.$invalid && signUpForm.phone.$touched"
-            style="color: white; background-color: red">Phone number must only contain numbers, spaces, dashes and parenthesis</span>
+            style="color: white; background-color: red">Phone number must only contain numbers, spaces, dashes and parenthesis, and must be American style</span>
         </p>
 
         <p>
@@ -71,3 +71,4 @@
   </div>
   </form>
 </div>
+
